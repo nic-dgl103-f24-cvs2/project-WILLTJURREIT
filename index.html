@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +20,7 @@
           alt="Vancouver island paving Logo"
           width="300"
       /></a>
-      <nav>
+      <div class="off-screen-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="aboutus.html">About Us</a></li>
@@ -27,7 +28,18 @@
           <li><a href="services.html">Gallery</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
+      </div>
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
+    <section class="hero">
+      <img src="Images/Rakerman.jpg" alt="large asphalt image" width="300px" />
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
