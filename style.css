@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -18,49 +19,35 @@ body {
   background-color: antiquewhite;
 }
 
-header {
-  background-color: white;
-  border: solid black 3px;
-  grid-column: 1;
-  grid-row: 1 span auto;
-  display: inline-block;
-}
-header img {
-  width: 5em;
-}
-.ham-menu {
-  color: black;
-  text-align: center;
-  height: 50px;
-  width: 50px;
-  margin-left: auto;
-  position: relative;
-}
-
-.ham-menu li a {
-  list-style: none;
-  text-decoration: none;
-  color: black;
-}
-.ham-menu li {
-  list-style: none;
-}
-.hero {
-  grid-column: 2;
-  grid-row: 1 span 2;
-  border: solid black 3px;
-}
-
-nav {
-  display: flex;
-  padding: 1rem;
-  background-color: red;
-}
-
-@media (min-width: 100px) and (max-width: 600px) {
+@media (min-width: 10px) and (max-width: 600px) {
   body {
-    display: inline-block;
+    display: block;
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(235, 234, 234);
+    width: 100%;
+    padding: 3%;
+    align-content: center;
+  }
+  .header__contact {
+    margin: 3%;
+    padding: 3%;
+    padding-right: 7%;
+  }
+  .header__contact a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+  }
+
+  header img {
+    width: 100%;
+  }
+
   .ham-menu {
     color: black;
     text-align: center;
@@ -68,6 +55,7 @@ nav {
     width: 50px;
     margin-left: auto;
     position: relative;
+    align-items: flex-end;
   }
   .ham-menu span {
     height: 5px;
@@ -87,7 +75,8 @@ nav {
     top: 75%;
   }
   .off-screen-menu {
-    background-color: rgb(19, 2, 2);
+    background-color: red;
+    border: solid black 3px;
     width: 100%;
     max-width: 450px;
     height: 100vh;
@@ -101,13 +90,9 @@ nav {
     font-size: 3em;
     transition: 2s ease;
   }
-  .off-screen-menu.active {
-    right: 0;
-  }
   nav {
     display: flex;
     padding: 1rem;
-    background-color: red;
   }
   .ham-menu.active span:nth-child(1) {
     transform: translate(-50%, -50%) rotate(45deg);
@@ -120,4 +105,82 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+
+  .off-screen-menu.active ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: auto;
+  }
+
+  .off-screen-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 5%;
+    margin: 3%;
+    background-color: black;
+    border-radius: 25px;
+    width: 100%;
+  }
+
+  .off-screen-menu.active {
+    border: solid black 3px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    top: 16rem;
+    left: 3rem;
+    transition: 2s;
+    z-index: 4;
+  }
+  .hero {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/yellowlines.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .hero > * {
+    position: relative;
+    z-index: 1;
+  }
+  .hero:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  .hero h1 {
+    font-size: 6rem;
+    font-weight: 420;
+    color: white;
+    z-index: 3;
+  }
+  .scroll__to__contact__section {
+    background-color: red;
+    border-radius: 25px;
+    width: 10rem;
+    position: absolute;
+    z-index: 3;
+    top: 40em;
+    right: 7em;
+  }
 }
+
+.off-screen-menu ul {
+  padding: 0;
+}
+
+/*------------------------------------------------------------ 600 px to 1200 px--------------------------------------------*/
