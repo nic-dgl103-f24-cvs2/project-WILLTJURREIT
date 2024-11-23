@@ -16,7 +16,7 @@ body {
   font-weight: 250;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  background-color: antiquewhite;
+  background-color: rgb(235, 234, 234);
 }
 
 @media (min-width: 10px) and (max-width: 600px) {
@@ -75,17 +75,13 @@ body {
     top: 75%;
   }
   .off-screen-menu {
-    background-color: red;
+    background-color: rgb(235, 234, 234);
     border: solid black 3px;
     width: 100%;
     max-width: 450px;
     height: 100vh;
     position: fixed;
     right: -450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     font-size: 3em;
     transition: 2s ease;
@@ -105,23 +101,27 @@ body {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-
+  .off-screen-menu ul {
+    list-style: none;
+  }
   .off-screen-menu.active ul li {
     list-style: none;
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    width: auto;
+    justify-content: center;
   }
 
   .off-screen-menu li a {
     text-decoration: none;
-    color: white;
-    padding: 5%;
-    margin: 3%;
-    background-color: black;
+    font-weight: 600;
+    color: black;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
     border-radius: 25px;
-    width: 100%;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   }
 
   .off-screen-menu.active {
@@ -172,10 +172,20 @@ body {
     background-color: red;
     border-radius: 25px;
     width: 10rem;
-    position: absolute;
+    position: sticky;
     z-index: 3;
-    top: 40em;
-    right: 7em;
+    left: 50rem;
+    transition: 1s;
+  }
+  .scroll__to__contact__section:hover {
+    background-color: white;
+    border-radius: 25px;
+    width: 10rem;
+    position: sticky;
+    z-index: 3;
+    left: 50rem;
+    transition: 1s;
+    cursor: pointer;
   }
 }
 
