@@ -411,6 +411,41 @@ body {
   .radio {
     padding: 10px;
   }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(97, 96, 96);
+    width: 100%;
+    height: 20em;
+    border-top: solid black 4px;
+    color: white;
+  }
+  footer h2 {
+    padding: 1em;
+    border-bottom: solid black 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .footer__contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer__contact ul {
+    list-style: none;
+  }
+  .footer__contact a {
+    padding: 3%;
+    color: white;
+    margin: 10px;
+    font-weight: 300;
+  }
+  .footer__contact li {
+    padding: 6px;
+    width: 15rem;
+  }
+  .footer__contact h3 {
+    padding: 1%;
+    margin-top: 2rem;
+    margin-right: none;
+  }
 }
-
-/*------------------------------------------------------------ 600 px to 1200 px--------------------------------------------*/
