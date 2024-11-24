@@ -68,7 +68,7 @@ The specific moods the site should convey is a clean and professional look, a we
 
 #### Colours
 
-**Primary**: The colours of this website will consist of 60% White 30% Black 10% Red, this will maintain the brand that the community has known and trusted for many years.
+**Primary**: The colours of this website will consist of 30% grey 30% White 30% Black 10% Red, this will maintain the brand that the community has known and trusted for many years.
 **Secondary**: The font colours may differ, between white or black in colour depanding on the contrast and positioning/ background.
 
 #### Fonts
@@ -86,13 +86,13 @@ Navigation: Home, About us, Services, Gallery, Contact us
 
 2. Hero
 
-Heading: "We do it right the firt time"
+Heading: "Quality Paving You Can Trust"
 Image: A chosen image by the client.
-Link to Gallery: "View Services" 3. About Section
+Scroll to button.
 
 Heading: "About Us"
 An introduction to the company and its values
-No link included
+No link included.
 
 4. Benefits
 

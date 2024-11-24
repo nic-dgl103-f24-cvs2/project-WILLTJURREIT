@@ -22,6 +22,7 @@ body {
 @media (min-width: 10px) and (max-width: 600px) {
   body {
     display: block;
+    background-color: rgb(235, 234, 234);
   }
 
   header {
@@ -121,9 +122,21 @@ body {
     background-color: white;
     border-radius: 25px;
     width: 95%;
+    transition: 1s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   }
-
+  .off-screen-menu li a:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: black;
+    border-radius: 25px;
+    width: 95%;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  }
   .off-screen-menu.active {
     border: solid black 3px;
     border-radius: 25px;
@@ -135,6 +148,7 @@ body {
     transition: 2s;
     z-index: 4;
   }
+
   .hero {
     padding: 20px;
     display: flex;
@@ -176,6 +190,7 @@ body {
     z-index: 3;
     left: 50rem;
     transition: 1s;
+    padding-bottom: 6px;
   }
   .scroll__to__contact__section:hover {
     background-color: white;
@@ -187,10 +202,155 @@ body {
     transition: 1s;
     cursor: pointer;
   }
-}
-
-.off-screen-menu ul {
-  padding: 0;
+  .scroll__to__contact__section h2 {
+    padding: 2%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .about__us {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 10%;
+    margin: 0;
+  }
+  .about__us h2 {
+    padding: 5%;
+    font-weight: 600;
+    color: black;
+  }
+  .about__us h2 b {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .about__us div {
+    border-radius: 15px;
+    border: red solid 3px;
+    padding: 3%;
+    margin: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .asphalt__services {
+    background-color: rgb(97, 96, 96);
+    width: 100%;
+    color: white;
+  }
+  .asphalt__services a {
+    float: right;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: white;
+    border: solid red 4px;
+    color: black;
+    font-size: 2rem;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .asphalt__services h2 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 1rem;
+  }
+  .asphalt__services img {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .asphalt__services h2 {
+    padding: 5%;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .asphalt__services h3 {
+    padding: 5%;
+    font-size: 2rem;
+    font-weight: 1.5rem;
+  }
+  .gravel__services a {
+    float: right;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: white;
+    border: solid red 4px;
+    color: black;
+    font-size: 2rem;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .gravel__services img {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .gravel__services h2 {
+    padding: 5%;
+    font-size: 4rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 1rem;
+  }
+  .gravel__services h3 {
+    padding: 5%;
+    font-size: 2rem;
+    font-weight: 1.5rem;
+  }
+  .parkinglot__services a {
+    float: right;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: white;
+    border: solid red 4px;
+    color: black;
+    font-size: 2rem;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .parkinglot__services {
+    background-color: rgb(97, 96, 96);
+    color: white;
+  }
+  .parkinglot__services img {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .parkinglot__services h2 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 1rem;
+    padding: 5%;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .parkinglot__services h3 {
+    padding: 5%;
+    font-size: 2rem;
+    font-weight: 1.5rem;
+  }
 }
 
 /*------------------------------------------------------------ 600 px to 1200 px--------------------------------------------*/
