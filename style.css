@@ -18,7 +18,7 @@ body {
   font-variation-settings: "wdth" 100;
   background-color: rgb(235, 234, 234);
 }
-
+/*---------------------------------------------------10px to 1200px-------------------------------------*/
 @media (min-width: 10px) and (max-width: 600px) {
   body {
     display: block;
@@ -148,7 +148,7 @@ body {
     transition: 2s;
     z-index: 4;
   }
-
+  /*---------------------------------------------HERO SECTION BEGINS HERE---------------------------------------*/
   .hero {
     padding: 20px;
     display: flex;
@@ -182,10 +182,11 @@ body {
     color: white;
     z-index: 3;
   }
+  /*--------------------------------------SCROLL-TO-CONTACT-US-BUTTON--------------------------------*/
   .scroll__to__contact__section {
     background-color: red;
-    border-radius: 25px;
-    width: 10rem;
+    border-radius: 20px;
+    width: 12rem;
     position: sticky;
     z-index: 3;
     left: 50rem;
@@ -207,6 +208,7 @@ body {
     text-align: center;
     font-size: 2rem;
   }
+  /*-----------------------------------ABOUT-US-SECTION-------------------------------------*/
   .about__us {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -229,6 +231,7 @@ body {
     margin: 3rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+  /*-------------------------------------SERVICES-SECTION--(INCLUDES 3 SECTIONS)------------------------------*/
   .asphalt__services {
     background-color: rgb(97, 96, 96);
     width: 100%;
@@ -351,6 +354,7 @@ body {
     font-size: 2rem;
     font-weight: 1.5rem;
   }
+  /*------------------------------------CONTACT-US-SECTION-------------------------------------*/
   .contact__us {
     width: 80%;
     height: auto;
@@ -411,6 +415,7 @@ body {
   .radio {
     padding: 10px;
   }
+  /*-------------------------------------------------FOOTER-------------------------------------------*/
   footer {
     display: flex;
     flex-wrap: wrap;
@@ -424,11 +429,18 @@ body {
     padding: 1em;
     border-bottom: solid black 3px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
   }
   .footer__contact {
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+  .footer__contact img {
+    width: 13rem;
+    float: left;
+    margin-right: 5%;
+    margin-left: 0;
   }
   .footer__contact ul {
     list-style: none;
@@ -436,7 +448,7 @@ body {
   .footer__contact a {
     padding: 3%;
     color: white;
-    margin: 10px;
+    margin: 5%;
     font-weight: 300;
   }
   .footer__contact li {
@@ -445,7 +457,428 @@ body {
   }
   .footer__contact h3 {
     padding: 1%;
+    margin-top: 3rem;
+    margin-right: 0;
+  }
+  .footer__call__us {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*-----------------------------------------------END-OF-MOBILE----------------------------------*/
+/*------------------------------------------------(1201PX AND UP)--------------------------------*/
+@media (min-width: 601px) and (max-width: 18000px) {
+  body {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 7;
+  }
+
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+    grid-column: 1;
+    grid-row: 1/8;
+    width: 45rem;
+    height: auto;
+    background-color: rgb(97, 96, 96);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+  .header__contact {
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    padding-top: 2rem;
+    align-items: center;
+    gap: 10rem;
+  }
+  .header__contact b {
+    color: white;
+  }
+  .header__contact a {
+    text-decoration: none;
+    color: white;
+    margin-left: 13rem;
+    width: 5em;
+  }
+  .off-screen-menu a {
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .off-screen-menu li {
+    padding-top: 2rem;
+    list-style: none;
+    margin: 1rem;
+    background: white;
+    padding-left: 14rem;
+    padding-right: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .header__scroll__container {
+    position: fixed;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*--------------------------------------HERO-SECTION-------------------------------------*/
+  .hero {
+    grid-row: 1;
+    grid-column: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/yellowlines.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .hero > * {
+    position: relative;
+    z-index: 1;
+  }
+  .hero:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  .hero h1 {
+    font-size: 5rem;
+    font-weight: 420;
+    color: white;
+    z-index: 3;
+  }
+  /*--------------------------------------SCROLL-TO-CONTACT-US-BUTTON--------------------------------*/
+  .scroll__to__contact__section {
+    background-color: red;
+    border-radius: 25px;
+    width: 10rem;
+    position: sticky;
+    z-index: 3;
+    left: 50rem;
+    transition: 1s;
+    padding-bottom: 6px;
     margin-top: 2rem;
-    margin-right: none;
+  }
+  .scroll__to__contact__section:hover {
+    background-color: white;
+    border-radius: 20px;
+    width: 12rem;
+    position: sticky;
+    z-index: 3;
+    left: 50rem;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .scroll__to__contact__section h2 {
+    padding: 2%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  /*-----------------------------------ABOUT-US-SECTION-------------------------------------*/
+  .about__us {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 10%;
+    margin: 0;
+  }
+  .about__us h2 {
+    padding: 5%;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+    line-height: 1.2;
+  }
+  .about__us h2 b {
+    font-size: 5rem;
+    font-weight: 600;
+    background-color: rgb(97, 96, 96);
+    width: 100%;
+    justify-self: center;
+    padding: 3rem;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+  }
+  .about__us div {
+    border-radius: 15px;
+    border: red solid 6px;
+    padding: 3%;
+    margin: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  /*-------------------------------------SERVICES-SECTION--(INCLUDES 3 SECTIONS)------------------------------*/
+  .asphalt__services {
+    grid-row: 3;
+    grid-column: 2;
+    background-color: rgb(97, 96, 96);
+    width: 100%;
+    color: white;
+  }
+  .asphalt__services a {
+    float: right;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: white;
+    border: solid red 4px;
+    color: black;
+    font-size: 2rem;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .asphalt__services h2 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 1rem;
+  }
+  .asphalt__services img {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .asphalt__services h2 {
+    padding: 5%;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .asphalt__services h3 {
+    padding: 5%;
+    font-size: 2rem;
+    font-weight: 1.5rem;
+  }
+  /*----------------------------------GRAVEL__SERVICES------------------------------------*/
+  .gravel__services {
+    grid-row: 4;
+    grid-column: 2;
+  }
+  .gravel__services a {
+    float: right;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: white;
+    border: solid red 4px;
+    color: black;
+    font-size: 2rem;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .gravel__services img {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .gravel__services h2 {
+    padding: 5%;
+    font-size: 4rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 1rem;
+  }
+  .gravel__services h3 {
+    padding: 5%;
+    font-size: 2rem;
+    font-weight: 1.5rem;
+  }
+  /*------------------------------------------PARKING__LOT__SERVICES------------------------------*/
+  .parkinglot__services {
+    grid-row: 5;
+    grid-column: 2;
+  }
+  .parkinglot__services a {
+    float: right;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: white;
+    border: solid red 4px;
+    color: black;
+    font-size: 2rem;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .parkinglot__services {
+    background-color: rgb(97, 96, 96);
+    color: white;
+  }
+  .parkinglot__services img {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .parkinglot__services h2 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 1rem;
+    padding: 5%;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .parkinglot__services h3 {
+    padding: 5%;
+    font-size: 2rem;
+    font-weight: 1.5rem;
+  }
+  /*------------------------------------CONTACT-US-SECTION-------------------------------------*/
+  .contact__us {
+    grid-row: 6;
+    grid-column: 2;
+    width: 80%;
+    height: auto;
+    border: solid red 4px;
+    margin: 3rem auto;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .contact__us h2 {
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: black solid 2px;
+    margin-bottom: 3rem;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+  .txt {
+    width: 95%;
+    height: 3rem;
+    border-radius: 8px;
+    margin: 1rem;
+  }
+  .txtarea {
+    width: 95%;
+    height: 10rem;
+    border-radius: 8px;
+    margin: 1rem;
+  }
+
+  td {
+    padding: 10px 20px 0px 0px;
+  }
+  .btn {
+    width: 95%;
+    height: 3rem;
+    border-radius: 8px;
+    margin: 1rem;
+    background-color: rgb(82, 82, 246);
+    border-radius: 5px;
+  }
+  .msg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    text-align: center;
+    font-size: 2rem;
+    padding: 3%;
+  }
+  .radio {
+    padding: 10px;
+  }
+  /*-------------------------------------------------FOOTER-------------------------------------------*/
+  footer {
+    grid-row: 7;
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(97, 96, 96);
+    width: 100%;
+    height: 20em;
+    border-top: solid black 4px;
+    color: white;
+  }
+  footer h2 {
+    padding: 1em;
+    border-bottom: solid black 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+  }
+  .footer__contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer__contact img {
+    width: 13rem;
+    float: left;
+    margin-right: 5%;
+    margin-left: 0;
+  }
+  .footer__contact ul {
+    list-style: none;
+  }
+  .footer__contact a {
+    padding: 3%;
+    color: white;
+    margin: 5%;
+    font-weight: 300;
+  }
+  .footer__contact li {
+    padding: 6px;
+    width: 15rem;
+  }
+  .footer__contact h3 {
+    padding: 1%;
+    margin-top: 3rem;
+    margin-right: 0;
+  }
+  .footer__call__us {
+    display: flex;
+    flex-direction: column;
   }
 }
