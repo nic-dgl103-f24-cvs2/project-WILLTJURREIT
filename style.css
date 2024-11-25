@@ -18,7 +18,7 @@ body {
   font-variation-settings: "wdth" 100;
   background-color: rgb(235, 234, 234);
 }
-/*---------------------------------------------------10px to 1200px-------------------------------------*/
+/*---------------------------------------------------10px to 1200px---MOBILE__INDEX__PAGE---------------------------------*/
 @media (min-width: 10px) and (max-width: 600px) {
   body {
     display: block;
@@ -466,7 +466,7 @@ body {
   }
 }
 /*-----------------------------------------------END-OF-MOBILE----------------------------------*/
-/*------------------------------------------------(1201PX AND UP)--------------------------------*/
+/*------------------------------------------------(601PX AND UP)--------------------------------*/
 @media (min-width: 601px) and (max-width: 18000px) {
   body {
     display: grid;
@@ -521,6 +521,13 @@ body {
     font-weight: 600;
     text-decoration: none;
   }
+  .off-screen-menu a:hover {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 2s;
+  }
   .off-screen-menu li {
     padding-top: 2rem;
     list-style: none;
@@ -529,6 +536,19 @@ body {
     padding-left: 14rem;
     padding-right: 10rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 2s;
+  }
+  .off-screen-menu li:hover {
+    padding-top: 2rem;
+    list-style: none;
+    margin: 0;
+    color: white;
+    background: black;
+    padding-left: 14rem;
+    padding-right: 11rem;
+    box-shadow: rgba(252, 2, 2, 0.25) 0px 54px 55px,
+      rgba(255, 4, 4, 0.12) 0px -12px 30px, rgba(249, 2, 2, 0.12) 0px 4px 6px,
+      rgba(255, 2, 2, 0.17) 0px 12px 13px, rgba(255, 2, 2, 0.09) 0px -3px 5px;
   }
   .header__scroll__container {
     position: fixed;
@@ -887,6 +907,31 @@ body {
 }
 /*--------------------------------------------------------------------------------------*/
 /*-------------------------------------------GALLERY__PAGE------------------------------*/
+/*--------------------------------------10px__to__600px__MOBILE-------------------------*/
+@media (min-width: 10px) and (max-width: 600px) {
+  .gallery__body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  header {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .wrapper__hero {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .gallery {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  footer {
+    grid-row: 5;
+    grid-column: 1;
+  }
+}
+
 .gallery__body {
   display: grid;
   grid-template-columns: auto auto;
@@ -941,7 +986,29 @@ body {
   padding-bottom: 5rem;
 }
 .gallery img {
-  width: 40%;
-  border: solid black 4px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 80%;
+  border: solid black 6px;
+  transition: 4s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+figcaption {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+figure {
+  justify-content: center;
+  margin: auto;
+}
+.gallery img:hover {
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  border: solid black 10px;
+  transition: 2s;
+  box-shadow: rgba(252, 2, 2, 0.25) 0px 54px 55px,
+    rgba(255, 4, 4, 0.12) 0px -12px 30px, rgba(249, 2, 2, 0.12) 0px 4px 6px,
+    rgba(255, 2, 2, 0.17) 0px 12px 13px, rgba(255, 2, 2, 0.09) 0px -3px 5px;
 }
