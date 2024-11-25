@@ -9,8 +9,8 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
   font-family: "Archivo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 250;
@@ -503,6 +503,9 @@ body {
     align-items: center;
     gap: 10rem;
   }
+  .header__scroll__container img {
+    width: 14rem;
+  }
   .header__contact b {
     color: white;
   }
@@ -881,4 +884,64 @@ body {
     display: flex;
     flex-direction: column;
   }
+}
+/*--------------------------------------------------------------------------------------*/
+/*-------------------------------------------GALLERY__PAGE------------------------------*/
+.gallery__body {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: rgb(97, 96, 96);
+}
+
+/*---------------------------------------------HERO SECTION BEGINS HERE---------------------------------------*/
+.gallery__hero {
+  grid-row: 1;
+  grid-column: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(Images/highway2.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-bottom: solid black 7px;
+}
+.gallery__hero > * {
+  position: relative;
+  z-index: 1;
+}
+.gallery__hero:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.gallery__hero h1 {
+  font-size: 6rem;
+  font-weight: 420;
+  color: white;
+  z-index: 3;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+.gallery img {
+  width: 40%;
+  border: solid black 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
