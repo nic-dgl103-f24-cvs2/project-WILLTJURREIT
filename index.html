@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="style.css" />
     <link rel="gallery" href="gallery.html" />
+    <link rel="about" href="about.html" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +25,7 @@
         <div class="off-screen-menu">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="#contact_us">Contact Us</a></li>
@@ -136,11 +137,23 @@
             <td colspan="3">
               <label>Fill out for a free estimate</label>
               <br />
-              <input type="radio" name="rate" value="asphalt_driveway" />Asphalt
-              Driveway
-              <input type="radio" name="rate" value="gravel_driveway" />Gravel
-              Driveway
-              <input type="radio" name="rate" value="parking_lot" />Parking Lot
+              <div class="radio-div">
+                <p style="display: flex; align-items: center; gap: 2px">
+                  <input type="radio" name="rate" value="asphalt_driveway" />
+                  Asphalt Driveway
+                </p>
+                <p style="display: flex; align-items: center; gap: 2px">
+                  <input
+                    type="radio"
+                    name="rate"
+                    value="gravel_driveway"
+                  />Gravel Driveway
+                </p>
+                <p style="display: flex; align-items: center; gap: 2px">
+                  <input type="radio" name="rate" value="parking_lot" />Parking
+                  Lot
+                </p>
+              </div>
             </td>
           </tr>
           <br />
