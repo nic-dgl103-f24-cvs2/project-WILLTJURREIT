@@ -9,7 +9,7 @@ The client needs a new website to enhance their online presence and better showc
 
 ### The most important purpose of this website
 
-The primary purpose of this website is top attract potential customers seeking professional paving solutions for residential and commercial products and deliver a high quality seemless customer experience. Maintaining the company brand is important with this website due to the long lasting relationship the business has had with the community. Vancouver Island Paving has a goal of delivering a friendly and fair customer experience, along with high quality asphalt products.
+The primary purpose of this website is top attract potential customers seeking professional paving solutions for residential and commercial products and deliver a high quality seemless customer experience. Maintaining the company brand is important with this website due to the long lasting relationship the business has had with the community. Vancouver Island Paving has a goal of delivering a friendly and fair customer experience, along with high quality asphalt products. We would like to geenerate much higher conversion rates.
 
 ### Target audience
 
