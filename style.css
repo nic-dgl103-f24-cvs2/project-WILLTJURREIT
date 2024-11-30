@@ -40,13 +40,19 @@ body {
   }
   .header__contact a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: black;
   }
+  .header__contact b {
+    font-size: 1.2rem;
+  }
+  .header__contact h2 {
+    font-size: 1rem;
+  }
 
   header img {
-    width: 100%;
+    width: 60%;
   }
 
   .ham-menu {
@@ -144,7 +150,7 @@ body {
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     top: 16rem;
-    left: 3rem;
+    right: 1rem;
     transition: 2s;
     z-index: 4;
   }
@@ -186,7 +192,7 @@ body {
   .scroll__to__contact__section {
     background-color: red;
     border-radius: 20px;
-    width: 12rem;
+    width: 10rem;
     position: sticky;
     z-index: 3;
     left: 50rem;
@@ -199,10 +205,10 @@ body {
     width: 10rem;
     position: sticky;
     z-index: 3;
-    left: 50rem;
     transition: 1s;
     cursor: pointer;
   }
+
   .scroll__to__contact__section h2 {
     padding: 2%;
     text-align: center;
@@ -418,10 +424,12 @@ body {
   /*-------------------------------------------------FOOTER-------------------------------------------*/
   footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
     background-color: rgb(97, 96, 96);
     width: 100%;
-    height: 20em;
+    height: auto;
     border-top: solid black 4px;
     color: white;
   }
@@ -433,23 +441,26 @@ body {
   }
   .footer__contact {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 30rem;
+    margin: auto;
   }
   .footer__contact img {
-    width: 13rem;
-    float: left;
-    margin-right: 5%;
-    margin-left: 0;
+    width: 10rem;
+    margin: auto;
+    padding: 2rem;
   }
   .footer__contact ul {
     list-style: none;
+    justify-content: center;
   }
   .footer__contact a {
     padding: 3%;
     color: white;
     margin: 5%;
     font-weight: 300;
+    width: 25rem;
   }
   .footer__contact li {
     padding: 6px;
@@ -462,7 +473,7 @@ body {
   }
   .footer__call__us {
     display: flex;
-    flex-direction: column;
+    align-items: center;
   }
 }
 /*-----------------------------------------------END-OF-MOBILE----------------------------------*/
@@ -609,8 +620,8 @@ body {
   }
   .scroll__to__contact__section:hover {
     background-color: white;
-    border-radius: 20px;
-    width: 12rem;
+    border-radius: 15px;
+    width: 10rem;
     position: sticky;
     z-index: 3;
     left: 50rem;
