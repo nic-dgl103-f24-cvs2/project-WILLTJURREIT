@@ -875,16 +875,18 @@ body {
   .footer__contact {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 0;
   }
   .footer__contact img {
-    width: 13rem;
+    width: 20%;
     float: left;
-    margin-right: 5%;
-    margin-left: 0;
+    margin: auto;
+    padding: 2%;
   }
   .footer__contact ul {
     list-style: none;
+    width: auto;
   }
   .footer__contact a {
     padding: 3%;
@@ -903,7 +905,8 @@ body {
   }
   .footer__call__us {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    width: 35%;
   }
 }
 /*--------------------------------------------------------------------------------------*/
@@ -1142,20 +1145,53 @@ figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20rem;
+  margin-top: 5rem;
+  color: white;
 }
 .meet__the__team img {
-  width: 30%;
+  width: 100%;
+  border: solid black 5px;
+  transition: 2s;
+  margin: 0;
+  padding: 0;
 }
-.meet__the__team h3 b {
+.meet__the__team figure {
+  width: 55%;
+  padding-right: 0;
+  margin-right: 3rem;
+}
+.meet__the__team figcaption {
+  font-size: 2rem;
+}
+.meet__the__team h1 b {
   font-size: 3rem;
   font-weight: 600;
-  padding: 20%;
-  width: 60%;
+}
+.meet__the__team h1 {
+  padding: 2rem;
+  width: 45%;
+}
+.meet__the__team h2 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: white;
+  color: black;
+  margin-top: 4rem;
+  padding: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .meet__the__team div {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.meet__the__team h3 {
+  padding: 2rem 5rem;
+
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .radio-div {
