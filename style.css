@@ -9,10 +9,9 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 3;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
   font-family: "Archivo", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -940,6 +939,9 @@ body {
     grid-row: 5;
     grid-column: 1;
   }
+  .footer__call__us a {
+    text-align: center;
+  }
 }
 
 .gallery__body {
@@ -1031,11 +1033,11 @@ figure {
   .about__body {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-row: auto auto auto auto auto;
   }
   header {
-    grid-row: 1;
     grid-column: 1;
+    grid-row: 1;
   }
   .header__contact {
     margin-right: 0;
@@ -1048,19 +1050,16 @@ figure {
     margin-right: 20rem;
   }
   header img {
-    width: 40%;
+    width: 10rem;
     padding: 2rem;
   }
   .header__scroll__container {
     display: flex;
   }
 
-  .about_hero {
-    background-image: url(Images2/About__us__hero_img.jpg);
-  }
   .about__hero {
-    grid-row: 2;
-    grid-column: 2;
+    grid-column: 1;
+    grid-row: 3;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -1090,21 +1089,72 @@ figure {
     z-index: 2;
   }
   .about__hero h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 420;
     color: white;
     z-index: 3;
   }
   .meet__the__team {
+    margin-top: 5rem;
+    grid-column: 1;
     grid-row: 4;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .meet__the__team div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 20%;
+    margin: 0;
+  }
+  .meet__the__team h1 {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    font-size: 0.5rem;
+  }
+
+  .meet__the__team figure img {
+    justify-self: center;
+  }
+  .meet__the__team h3 {
+    padding: 2%;
+  }
+
+  .meet__the__team figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .information__about__us {
+    grid-column: 1;
+    grid-row: 5;
   }
   footer {
-    grid-row: 5;
     grid-column: 1;
+    grid-row: 6;
+    justify-self: center;
+  }
+  .footer__call__us {
+    padding: 5rem;
+    height: 8rem;
+  }
+
+  .footer__call__us h3 {
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+  }
+  .footer__call__us a {
+    margin: 0;
+    padding: 3px;
   }
   .about__body h3 {
-    padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -1168,14 +1218,14 @@ figure {
 }
 .meet__the__team figure {
   width: 55%;
-  padding-right: 0;
+
   margin-right: 3rem;
 }
 .meet__the__team figcaption {
   font-size: 2rem;
 }
-.meet__the__team h1 b {
-  font-size: 3rem;
+.meet__the__team h1 {
+  font-size: 2rem;
   font-weight: 600;
 }
 .meet__the__team h1 {
@@ -1192,17 +1242,16 @@ figure {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+.meet__the__team h3 {
+  padding: 10rem;
+  margin: 1%;
+  font-size: 1.6rem;
+}
 .meet__the__team div {
   display: flex;
   gap: 2rem;
   padding: 0;
   margin: 0;
-}
-.meet__the__team h3 {
-  padding: 2rem 5rem;
-
-  font-size: 2rem;
-  font-weight: 500;
 }
 
 .radio-div {
