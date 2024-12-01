@@ -90,7 +90,7 @@ body {
     right: -450px;
     text-align: center;
     font-size: 3em;
-    transition: 2s ease;
+    z-index: 4;
   }
   nav {
     display: flex;
@@ -148,7 +148,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    top: 16rem;
+    top: 10rem;
     right: 1rem;
     transition: 2s;
     z-index: 4;
@@ -279,7 +279,7 @@ body {
   .asphalt__services h3 {
     padding: 5%;
     font-size: 2rem;
-    font-weight: 1.5rem;
+    font-weight: 300;
   }
   .gravel__services a {
     float: right;
@@ -316,7 +316,7 @@ body {
   .gravel__services h3 {
     padding: 5%;
     font-size: 2rem;
-    font-weight: 1.5rem;
+    font-weight: 300;
   }
   .parkinglot__services a {
     float: right;
@@ -357,7 +357,7 @@ body {
   .parkinglot__services h3 {
     padding: 5%;
     font-size: 2rem;
-    font-weight: 1.5rem;
+    font-weight: 300;
   }
   /*------------------------------------CONTACT-US-SECTION-------------------------------------*/
   .contact__us {
@@ -480,8 +480,8 @@ body {
 @media (min-width: 601px) and (max-width: 18000px) {
   body {
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 7;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
   }
 
   header {
@@ -711,7 +711,7 @@ body {
   .asphalt__services h3 {
     padding: 5%;
     font-size: 2rem;
-    font-weight: 1.5rem;
+    font-weight: 300;
   }
   /*----------------------------------GRAVEL__SERVICES------------------------------------*/
   .gravel__services {
@@ -753,7 +753,7 @@ body {
   .gravel__services h3 {
     padding: 5%;
     font-size: 2rem;
-    font-weight: 1.5rem;
+    font-weight: 300;
   }
   /*------------------------------------------PARKING__LOT__SERVICES------------------------------*/
   .parkinglot__services {
@@ -799,7 +799,7 @@ body {
   .parkinglot__services h3 {
     padding: 5%;
     font-size: 2rem;
-    font-weight: 1.5rem;
+    font-weight: 300;
   }
   /*------------------------------------CONTACT-US-SECTION-------------------------------------*/
   .contact__us {
@@ -1033,7 +1033,7 @@ figure {
   .about__body {
     display: grid;
     grid-template-columns: auto;
-    grid-row: auto auto auto auto auto;
+    grid-row: 7;
   }
   header {
     grid-column: 1;
