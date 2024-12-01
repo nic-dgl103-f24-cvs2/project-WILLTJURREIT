@@ -375,7 +375,11 @@ body {
     border-bottom: black solid 2px;
     margin-bottom: 3rem;
   }
-
+  .contact__us p {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
   table {
     font-size: 1rem;
   }
@@ -418,6 +422,11 @@ body {
     padding: 3%;
   }
   .radio {
+    padding: 10px;
+  }
+  .radio-div {
+    display: flex;
+    gap: 10px;
     padding: 10px;
   }
   /*-------------------------------------------------FOOTER-------------------------------------------*/
@@ -1254,11 +1263,6 @@ figure {
   margin: 0;
 }
 
-.radio-div {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-}
 /*----------------------------------------------------------TABLE-----------------------------------------------*/
 .information__about__us {
   width: 100%;
