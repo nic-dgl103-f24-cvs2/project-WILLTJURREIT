@@ -110,7 +110,7 @@ Heading, Link to View Services page, paragraph with a call to action information
 
 7. Footer
 
-Contact information, social media, days and hours of operation
+Contact information, days and hours of operation, logo
 
 #### About us page
 
@@ -127,6 +127,8 @@ Heading: "About us"
 
 Heading: "Our history"
 Image: An image of a high-quality service the company provided to a happy customer
+A table with related information
+VIP your paving partner for over 35 years: with a write up about the clients history.
 
 4. Footer
 
@@ -146,7 +148,7 @@ Image: large chosen image
 3. Image section
 
 A collection of images provided by the current website, or the client
-Grid layout applied
+Grid layout applied, each image with its own short destription.
 
 4. Call To Action
 

@@ -17,6 +17,10 @@ body {
   font-variation-settings: "wdth" 100;
   background-color: rgb(235, 234, 234);
 }
+body h1 {
+  font-family: "Parkinsans", sans-serif;
+}
+
 /*---------------------------------------------------10px to 1200px---MOBILE__INDEX__PAGE---------------------------------*/
 @media (min-width: 10px) and (max-width: 600px) {
   body {
@@ -186,6 +190,7 @@ body {
     font-weight: 420;
     color: white;
     z-index: 3;
+    font-family: "Parkinsans", sans-serif;
   }
   /*--------------------------------------SCROLL-TO-CONTACT-US-BUTTON--------------------------------*/
   .scroll__to__contact__section {
@@ -249,7 +254,7 @@ body {
     text-decoration: none;
     background-color: white;
     border: solid red 4px;
-    color: black;
+    color: #000000;
     font-size: 2rem;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -613,6 +618,7 @@ body {
     font-weight: 420;
     color: white;
     z-index: 3;
+    font-family: "Parkinsans", sans-serif;
   }
   /*--------------------------------------SCROLL-TO-CONTACT-US-BUTTON--------------------------------*/
   .scroll__to__contact__section {
@@ -1102,6 +1108,7 @@ figure {
     font-weight: 420;
     color: white;
     z-index: 3;
+    font-family: "Parkinsans", sans-serif;
   }
   .meet__the__team {
     margin-top: 5rem;
@@ -1124,6 +1131,7 @@ figure {
     margin: auto;
     padding: 0;
     font-size: 0.5rem;
+    font-family: "Parkinsans", sans-serif;
   }
 
   .meet__the__team figure img {
@@ -1236,10 +1244,9 @@ figure {
 .meet__the__team h1 {
   font-size: 2rem;
   font-weight: 600;
-}
-.meet__the__team h1 {
   padding: 2rem;
   width: 45%;
+  font-family: "Parkinsans", sans-serif;
 }
 .meet__the__team h2 {
   text-align: center;
